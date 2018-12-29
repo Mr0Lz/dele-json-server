@@ -26,7 +26,7 @@ router.render = (req, res)=>{
         body: res.locals.data//res.locals.data这个是真正的数据
     })
 }
-server.use(jsonServer.rewriter(rules));
+
 server.use(router);
 
 server.listen({
